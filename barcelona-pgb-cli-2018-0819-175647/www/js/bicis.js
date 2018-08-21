@@ -83,8 +83,8 @@ function geo_success(position) {
 
 	var cont = bounds.contains(latlng);
 		if (cont==false){
-			 //document.getElementById('mensaje').innerHTML="Su ubicación no se encuentra en el rango del mapa <br />";
-             alert("Su ubicación no se encuentra en el rango del mapa");
+			 document.getElementById('mensaje').innerHTML="Su ubicación no se encuentra en el rango del mapa <br />";
+             //alert("Su ubicación no se encuentra en el rango del mapa");
 			}
 
 
