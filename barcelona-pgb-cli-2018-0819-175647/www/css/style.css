@@ -43,17 +43,7 @@ html, body, #map{
 	border-radius: 4px;
 	border: none;
 }
-#mensaje{
-	width: 100%;
-	height: 30px;
-	position: absolute;
-	left: 0px;
-	top: 0px;
-	text-align: center;
-	font-size: 16px;
-	color: #000000;
-	font-weight: bold;
-}
+
 
 .centrar{
 	width: 40px;
@@ -79,8 +69,8 @@ html, body, #map{
 }
 
 #mensaje{
-	width: 100%;
-	height: 30px;
+	min-width: 300px;
+	height: 50px;
 	position: absolute;
 	left: 0px;
 	top: 0px;
@@ -88,6 +78,12 @@ html, body, #map{
 	font-size: 16px;
 	color: #000000;
 	font-weight: bold;	
+	margin-left:auto;
+	margin-right:auto;
+	left:0;
+	right:0;
+	text-shadow: white 2px 2px;
+
 }
 #botonera{
 	width: 100%;

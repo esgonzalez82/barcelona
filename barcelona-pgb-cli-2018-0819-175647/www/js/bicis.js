@@ -8,7 +8,7 @@ bounds = L.latLngBounds(corner1, corner2);
 var map = L.map('map', {
     center: [41.4081232,2.17089],
     zoom: 15,
-    minZoom: 14,
+    minZoom: 15,
     maxZoom: 17,
     maxBounds: bounds,
 });
@@ -83,7 +83,7 @@ function geo_success(position) {
 
 	var cont = bounds.contains(latlng);
 		if (cont==false){
-			 document.getElementById('mensaje').innerHTML="Su ubicación no se encuentra en el rango del mapa <br />";
+			 document.getElementById('mensaje').innerHTML="USTED NO SE ENCUENTRA EN EL RANGO DEL MAPA<br />";
              //alert("Su ubicación no se encuentra en el rango del mapa");
 			}
 
@@ -92,9 +92,9 @@ function geo_success(position) {
     click: function() {
     
     if (cont==false){
-             //document.getElementById('mensaje').innerHTML="Su ubicación no se encuentra en el rango del mapa <br />";
+             document.getElementById('mensaje').innerHTML="USTED NO SE ENCUENTRA EN EL RANGO DEL MAPA<br />";
 
-             alert("Su ubicación no se encuentra en el rango del mapa");
+             //alert("Su ubicación no se encuentra en el rango del mapa");
             }else {map.setView([position.coords.latitude,position.coords.longitude]);}
   }
 });   
