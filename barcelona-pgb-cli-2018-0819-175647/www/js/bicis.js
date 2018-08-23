@@ -8,8 +8,8 @@ bounds = L.latLngBounds(corner1, corner2);
 var map = L.map('map', {
     center: [41.4081232,2.17089],
     zoom: 15,
-    minZoom: 15,
-    maxZoom: 17,
+    minZoom: 14,
+    maxZoom: 16,
     maxBounds: bounds,
 });
 
